@@ -205,7 +205,6 @@ color: #000;
   align-items: center;
   justify-content: flex-start;
   background-color: #F4F4F4;
-  opacity: 0;
 
 }
 
@@ -580,7 +579,6 @@ margin-bottom: 32px;
 padding:0 70px;
 margin-bottom: 15px;
 max-height: 370px;
-
 }
 .nextBanner__title{
   margin-bottom: 40px;

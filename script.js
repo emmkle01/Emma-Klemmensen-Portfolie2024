@@ -1,19 +1,28 @@
-//buttons//
+document.addEventListener('DOMContentLoaded', function() {
+  // Get the buttons by their IDs
+  const projectOneButton = document.getElementById('projectOne__button');
+  const projectTwoButton = document.getElementById('projectTwo__button');
+  const projectThreeButton = document.getElementById('projectThree__button');
 
-//prodjectOne//
-document.getElementById('projectOne__button').addEventListener('click', function() {
-    window.location.href = 'projectOne.html';
-  });
+  // Add click event listeners
+  if (projectOneButton) {
+      projectOneButton.addEventListener('click', function() {
+          window.location.href = 'projectOne.html'; // Path to Project 1 page
+      });
+  }
 
-  //prodjectTwo//
-document.getElementById('projectTwo__button').addEventListener('click', function() {
-    window.location.href = 'projectTwo.html';
-  });
+  if (projectTwoButton) {
+      projectTwoButton.addEventListener('click', function() {
+          window.location.href = 'projectTwo.html'; // Path to Project 2 page
+      });
+  }
 
-//prodjectThree//
-document.getElementById('projectThree__button').addEventListener('click', function() {
-    window.location.href = 'projectThree.html';
-  });
+  if (projectThreeButton) {
+      projectThreeButton.addEventListener('click', function() {
+          window.location.href = 'projectThree.html'; // Path to Project 3 page
+      });
+  }
+});
 
 
   document.addEventListener('DOMContentLoaded', function() {
