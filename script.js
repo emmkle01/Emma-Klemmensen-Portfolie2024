@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
+//animation 
   document.addEventListener('DOMContentLoaded', function() {
     const sections = document.querySelectorAll('.scroll-section'); // Vælg alle sektioner
   

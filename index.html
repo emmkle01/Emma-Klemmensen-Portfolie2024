@@ -13,17 +13,30 @@
     />
   </head>
   <body>
-    <!-- NavBar -->
-    <nav class="navbar">
-      <section class="navbar__left">
-        <a class="navbar__text" href="#">Emma Klemmensen</a>
-      </section>
-      <section class="navbar__right">
-        <a class="navbar__text" href="#">Projekter</a>
-        <a class="navbar__text" href="#">Om mig</a>
-      </section>
-    </nav>
 
+   <!-- NavBar -->
+<nav class="navbar">
+  <section class="navbar__left">
+    <a class="navbar__text" href="#">Emma Klemmensen</a>
+  </section>
+
+  <section class="navbar__right">
+    <ul class="navbar__list">
+      <!-- Drop-down for 'Projekter' -->
+      <li class="dropdown">
+        <a class="navbar__text navbar__text--hover" href="#">Projekter</a>
+        <ul class="dropdown-menu">
+          <li><a href="projectOne.html">Børneskyen</a></li>
+          <li><a href="projectTwo.html">Cerberies</a></li>
+          <li><a href="projectThree.html">Sushi-bestillingssystem</a></li>
+        </ul>
+      </li>
+      <li>
+        <a class="navbar__text navbar__text--hover" href="#">Om mig</a>
+      </li>
+    </ul>
+  </section>
+</nav>
     <!-- Hero sektion -->
     <header class="header">
       <section class="header__content slide-in-text">
@@ -90,9 +103,7 @@
       <section class="aboutContent">
         <h2 class="about__title title">Hvem er jeg?</h2>
         <p class="about__text text">
-          Jeg er 26 år og studerer multimediedesign på 3. semester. Jeg brænder
-          for at skabe brugervenlige og visuelt tiltalende digitale oplevelser,
-          hvor design og funktionalitet går hånd i hånd.
+          Læs lidt om mig som UI-designer, mine faglige kompetencer, og hvilken praktikplads jeg søger. Klik videre for at få et indblik i, hvordan jeg kan bidrage til dit team!
         </p>
         <button class="about__button button">
           <p>Læs mere</p>
