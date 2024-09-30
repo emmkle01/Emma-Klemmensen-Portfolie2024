@@ -1,0 +1,593 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/*text styles*/
+:root {
+  --heading-font-size: 64px;
+  --subHeading-font-size: 32px;
+}
+
+.title{
+    color: black;
+    font-family: "Playfair Display";
+    font-size: 40px;
+    margin-bottom: 24px;
+}
+.sectionTitle{
+  color: #82533A;
+  font-family: Lato;
+  font-size: 32px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  }
+.sectionText{
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 52px;
+  max-width: 100%;
+  word-break: break-word;
+}
+.text {
+color: #000;
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 150%;
+  margin-bottom: 52px;
+  width: 50%;
+    
+}
+/*Button*/
+.button {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid black;
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .button p {
+    margin: 0;
+    font-size: 20px;
+    color: inherit;
+  }
+  .button:hover {
+    background-color: black;
+    color: white;
+  }
+  .button:active {
+    background-color: rgba(0, 0, 0, 0.8); 
+    color: white; 
+    transform: scale(0.97); 
+    border-color: rgba(0, 0, 0, 0.8); 
+}
+  .buttonWhite {
+    padding: 12px 24px;
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .buttonWhite p {
+    margin: 0;
+    font-size: 20px;
+    color: inherit;
+  }
+  .buttonWhite:hover {
+    background-color: white;
+    color: black;
+  }
+  .buttonWhite:active {
+    background-color: rgba(255, 255, 255, 0.8); 
+    color: black; 
+    transform: scale(0.97); 
+    border-color: rgba(255, 255, 255, 0.8); 
+  }
+/*Nav*/
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 60px 60px 0 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 90%;
+  z-index: 10;
+}
+
+.navbar__text {
+  margin-left: 60px;
+  color: #ae7d60;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+/*Header*/
+.header {
+  height: 100vh;
+  background-color: #424959;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.header__content {
+  display: flex;
+  flex-direction: column;
+  font-family: "Playfair Display", serif;
+  margin-bottom: 50px;
+}
+
+.header__heading {
+  font-size: var(--heading-font-size);
+  font-weight: 500;
+  background: linear-gradient(
+    91deg,
+    #b68669 -8.75%,
+    #8c553a 46.88%,
+    #c89576 107.22%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.header__subHeading {
+  font-size: var(--subHeading-font-size);
+  font-weight: 500;
+  color: white;
+}
+.header__flower {
+  margin-left: -150px;
+}
+.slide-in-text {
+  font-size: 20px;
+  color: black;
+  opacity: 0; 
+  transform: translateX(-100%); 
+  animation: slideIn 1.5s ease forwards; 
+}
+@keyframes slideIn {
+  to {
+    opacity: 1; 
+    transform: translateX(0); 
+  }
+}
+/*About me*/
+.about {
+  background-image: url(images/aboutImage.png);
+  background-size: cover;
+  background-position: bottom center;
+  background-repeat: no-repeat;
+  height: 85vh;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.aboutContent {
+  padding-left: 50px;
+}
+.about__title {
+  
+}
+.about__text {
+ 
+}
+/*scroll animation */
+.scroll-section {
+  opacity: 0.8;
+  transform: translateY(50px); 
+  transition: opacity 1s ease, transform 1s ease; 
+}
+
+.scroll-section.visible {
+  opacity: 1;
+  transform: translateY(0); 
+}
+
+/*Børneskyen project One */
+.projectOne {
+  background-image: url(images/børneskyen.png);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 80vh;
+  margin: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background-color: #F4F4F4;
+  opacity: 0;
+
+}
+
+.projectOne__text{
+    width: 70%;
+}
+.project__content{
+    padding-left: 50px;
+}
+.projectOne__image{
+
+
+  }
+/* Cerberis project tw0 */
+.projecttwo{
+    height: 80vh;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #464646;
+    display: flex;
+    flex-direction: row;
+}
+.projectTwo__image{
+    width: 70px;
+    margin-bottom: 150px;
+
+}
+.projectTwo__title{
+    color: #00ACD7;
+}
+.projectTwo__text{
+    color: white;
+    width: 70%;
+}
+.cerberis__image{
+  margin-left: 250px;
+}
+
+/*Sushi project three */
+.projectThree{
+    height: 80vh;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #555E73;
+}
+.projectThree__title{
+  color: #FFF;
+}
+.projectThree__text{
+  color: #FFF;
+}
+.projectThree__image{
+  width: 70%;
+  margin-left: 150px;
+}
+
+/* Footer*/
+.footer{ 
+  background-color: #424959;
+  height: 25vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-style: normal;
+  padding: 50px 65px;
+}
+.footer__content{
+  width: 100%;
+}
+.footer__title{
+color: #AE7D60;
+font-size: 24px;
+font-weight: 300;
+margin-bottom: 16px;
+}
+.footer__text{
+    color: #AE7D60;
+    margin-bottom: 8px;
+    left: 0;
+}
+.footer__image{
+  max-width: 100%;
+}
+
+/* Børneskyen*/
+
+.childcloudHeader{
+  background-image: url(images/børneskyenOp.png);
+  background-size: contain;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F4F4;
+  margin-bottom: 200px;
+}
+.childcloudHeader__title{
+  font-size: 72px;
+  text-align: center;
+}
+.childcloudHeader__text{
+  text-align: center;
+  font-size: 24px;
+  width: 100%;
+}
+.purpose{
+margin-bottom: 200px;
+padding: 0 150px;
+}
+.persona{
+padding: 100px 150px;
+background-color: #5D667D;
+display: flex;
+flex-direction: row;
+height: auto;
+margin-bottom: 200px;
+}
+.persona__image{
+max-width: 100%;
+}
+.personaContent{
+  margin: 15px 32px 0 0 ;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.persona__title{
+  color: white;
+}
+.persona__text{
+  color: white;
+  max-width: 100%;
+}
+.concept{
+  margin-bottom: 200px;
+  margin: 0 150px
+}
+.concept__image{
+max-width: 100%;
+margin: 50px 0 200px 0;
+}
+.wireframe{
+  margin: 0 150px
+}
+.prototypes{
+  max-width: 100%;
+  margin: 0 150px;
+  display: flex;
+  flex-direction: column;
+}
+.prototypes__video{
+  margin-bottom: 100px;
+  border-radius: 12px;
+  border: 18px solid rgb(51, 51, 51);
+}
+.prototypes__image{
+  width: 100%;
+  margin-bottom: 200px;
+}
+.components{
+  margin: 0 150px
+}
+.components__text{
+  width: 100%;
+}
+.components__image{
+  max-width: 100%;
+  margin-bottom: 200px;
+}
+.test{
+  padding: 100px 150px;
+  background-color: #5D667D;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 200px;
+}
+.test__title{
+  color: white;
+}
+.test__text{
+  color: white;
+}
+.test__image{
+margin-left: 32px;
+}
+.after{
+  margin: 0 150px 200px 150px;
+}
+
+/* project two - cerberis*/
+.projectTwoHeader{
+  background-image: url(images/cerberisZoom.svg);
+  background-size: auto;
+  background-position: bottom right 150px ;
+  background-repeat: no-repeat;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #464646;
+  opacity: 0.6;
+  display: flex;
+  flex-direction:column;
+  padding-right: 50px;
+  margin-bottom: 200px;
+}
+.projectTwoHeader__titel{
+  color: #00ACD7;
+  opacity: 1;
+}
+.projectTwoHeader__text{
+  color: #FFF;
+  opacity: 1;
+  text-align: center;
+}
+.workprocess{
+  padding: 100px 150px;
+  background-color: #201F1F;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin-bottom: 200px;
+  max-width: 100%;
+  }
+  .workprocess__image{
+  width: 90%;
+  height: auto;
+  }
+  .workprocessContent{
+    margin: 15px 32px 0 0 ;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .workprocess__title{
+    color: white;
+  }
+  .workprocess__text{
+    color: white;
+    max-width: 100%;
+  }
+  .cerberisConcept{
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 50px;
+    max-width: 100%;
+  }
+  .cerberisConcept__image{
+    margin: 32px 32px 0 0;
+    width: 70%;
+  }
+  .cerberisWidget{
+    padding: 100px 150px;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-bottom: 100px;
+    max-width: 100%;
+  }
+.cerberisConcept__title .cerberisConcept__text{
+  width: 30%;
+}
+  .cerberiswidget__image{
+    width: 60%;
+    height: auto;
+    margin: -250px 0 0 32px;
+  }
+  .guide{
+    padding: 100px 150px;
+    background-color: #FCF2E3;
+    max-width: 100%;
+    margin-bottom: 200px;
+  }
+  .guide__image{
+    width: 100%;
+  }
+  .guide__title{
+margin-bottom: 32px;
+  }
+
+
+/* Project three - sushi odering system*/
+.projectThreeHeader{
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #555E73;
+  opacity: 0.6;
+  margin-bottom: 200px;
+
+}
+.projectThreeHeader__image{
+  max-width: 450px;
+}
+.projectThreeHeader__title{
+  color: #FFF;
+  opacity: 1;
+}
+.projectThreeHeader__text{
+  width: 80%;
+  color: #FFF;
+  opacity: 1;
+}
+.projectThree__content{
+ 
+}
+.projectThree__purpose{
+  margin-bottom: 200px;
+  padding: 0 150px;
+}
+.projectThreeConcept{
+ margin-bottom: 200px;
+ padding: 0 150px;
+}
+.prototype__images{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+}
+.prototype__image{
+  width: 30%;
+  transition: transform 0.3s ease, z-index 0.3s ease;
+}
+.prototype__image:hover {
+  transform: scale(1.7);
+  z-index: 4;
+}
+.prototype{
+  padding: 0 150px;
+  margin-bottom: 200px;
+}
+.responsive{
+  padding: 0 150px;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 200px;
+}
+.responsive__text{
+  width: auto;
+  margin-right: 32px;
+}
+.responsive__image{
+  width: 100%;
+}
+
+/* Next project Banner */
+.nextBannerTwo{
+  margin-bottom: 15px;
+  padding: 0 70px;
+  height: auto;
+}
+.nextBannerThree{
+  display: flex;
+  margin-bottom: 15px;
+  align-items: center;
+  justify-content: space-between;
+  padding:0 70px;
+  height: auto;
+}
+.nextBannerOne{
+padding:0 70px;
+margin-bottom: 15px;
+max-height: 370px;
+
+}
+.nextBanner__title{
+  margin-bottom: 40px;
+}
+.nextBanner__text{
+color: #82533A;;
+}
+.nextBanner__image{
+  transform: scale(0.7);
+}
